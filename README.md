@@ -1,0 +1,1 @@
+# qr-code-generate-and-decoder
