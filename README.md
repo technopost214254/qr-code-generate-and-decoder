@@ -1,12 +1,65 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# QR Code Generator & Decoder (React + Vite)
 
-Currently, two official plugins are available:
+This project is a web application built with React and Vite that allows users to generate QR codes from text input and decode QR codes from uploaded images.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **QR Code Generation:** Enter any text and generate a QR code instantly.
+- **Download QR Code:** Download the generated QR code as a PNG image.
+- **QR Code Decoding:** Upload a QR code image to decode and display its contents.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- [React](https://react.dev/) for UI
+- [Vite](https://vitejs.dev/) for fast development and build
+- [react-qr-code](https://github.com/rosskhanas/react-qr-code) for QR code generation
+- [qrcode-decoder](https://github.com/edi9999/jsqrcode) for decoding QR codes
+- [html2canvas](https://github.com/niklasvh/html2canvas) for downloading QR code as image
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed
+
+### Installation
+
+```bash
+npm install
+```
+
+### Running the App
+
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Usage
+
+1. **Generate QR Code:** Enter text and click "Generate QR" to see the QR code. Click "Download QR" to save it.
+2. **Decode QR Code:** Upload a QR code image to see its decoded text.
+
+## Project Structure
+
+- `src/App.jsx`: Main app logic for QR code generation and decoding
+- `src/App.css`: Styles
+- `public/`: Static assets
+- `index.html`: Entry point
+
+## License
+
+MIT
